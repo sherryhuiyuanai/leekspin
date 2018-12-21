@@ -1,0 +1,28 @@
+{
+   "background": {
+      "scripts": [ "ncage/bg.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "lib/ga/ga.js", "ncage/ncage.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "ncage/logo128.png",
+      "16": "ncage/logo16.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC1iwFVxMHNfJyY96fpu20zSiEHQ+Ff2Wb6iMOXAFYcENodOjQ4gifWZnrCRHEG7cSofdlPhu9kFFNxV8fd4TJuetbmIyM7UxhqfbIMghh1EyNYNltesq7cCUnNdTLQ3gFAtGHBEcSZ/m0zB59241Bv52byaABzbuom6S3aSNmYZwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "options_page": "ncage/options/options.html",
+   "options_ui": {
+      "chrome_style": true,
+      "page": "ncage/options/options.html"
+   },
+   "permissions": [ "storage", "tabs", "contextMenus", "webRequest", "\u003Call_urls>", "http://*/*", "https://*/*", "webNavigation", "webRequestBlocking", "cookies", "storage", "unlimitedStorage" ],
+   "short_name": "__MSG_appName__",
+   "version": "1.93"
+}
